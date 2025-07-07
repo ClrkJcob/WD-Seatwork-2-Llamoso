@@ -1,4 +1,6 @@
 # WD-Seatwork-2  
+![Slam Dunk Banner](./assets/img/slamdunk.jpg)
+
 **Slam Dunk Starting 5 Hero Section**
 
 ## 📝 Short Description:
