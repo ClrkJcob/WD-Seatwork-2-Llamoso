@@ -1,5 +1,5 @@
 # WD-Seatwork-2  
-**Slam Dunk Legends Hero Section**
+**Slam Dunk Starting 5 Hero Section**
 
 ## 📝 Short Description:
 A single-page hero section dedicated to the anime Slam Dunk. This project uses HTML and CSS to create a clean, modern design with interactive hover effects and character links. The layout captures the energy and emotion of Shohoku High's basketball team while demonstrating front-end development skills.
