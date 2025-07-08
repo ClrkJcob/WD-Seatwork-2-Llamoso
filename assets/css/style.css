@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-image: url('/assets/img/shohokugym.jpg');
+  background-image: url('../img/shohokugym.jpg'); /* relative path from assets/css */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,171 +10,11 @@ background-image: url('/assets/img/shohokugym.jpg');
   animation: fadeInBody 1s ease-in;
 }
 
+/* rest of your CSS unchanged... */
+
 @keyframes fadeInBody {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-.overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 1rem 2rem;
-}
-
-header {
-  padding: 1rem;
-  color: white;
-  animation: slideDown 1s ease;
-}
-
-@keyframes slideDown {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.side-menu ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  overflow-x: hidden;
-  max-width: 100vw;
-}
-
-.character-wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.side-menu li {
-  text-align: center;
-  animation: fadeInItem 1.2s ease;
-}
-
-@keyframes fadeInItem {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.side-menu img {
-  width: 160px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid rgba(255, 255, 255, 0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeInImg 1.5s forwards;
-}
-
-@keyframes fadeInImg {
-  to { opacity: 1; }
-}
-
-.side-menu img:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
-.side-menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: bold;
-  display: block;
-  margin-top: 0.5rem;
-  transition: color 0.3s, text-shadow 0.3s;
-}
-
-.side-menu a:hover {
-  color: #ff5252;
-  text-shadow: 0 0 5px #ff5252;
-}
-
-.hero {
-  margin: 2rem auto;
-  max-width: 800px;
-  animation: slideUp 1s ease-in-out;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  color: #ff5252;
-  text-align: center;
-}
-
-.hero p {
-  font-size: 2rem;
-  line-height: 1.6;
-  color: #eeeeee;
-}
-
-footer {
-  background-color: transparent;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #cccccc;
-  margin-top: 2rem;
-  width: 100%;
-  animation: fadeInFooter 1.2s ease;
-}
-
-@keyframes fadeInFooter {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Back to Home button styles */
-.back-link {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  animation: slideInLeft 0.7s ease forwards;
-  opacity: 0;
-}
-
-.back-link:hover {
-  background-color: rgba(255, 255, 255, 0);
-  color: #ff5252;
-  box-shadow: 0 0 12px rgba(255, 82, 82, 0.5);
-  transform: scale(1.05);
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+/* ...continue with the rest of your CSS as is... */
