@@ -31,4 +31,46 @@ This project is part of a Web Design seatwork focused on building a responsive a
 ---
 
 ## 🗂️ File Structure
+```
+WD-SEATWORK-2
+├── assets
+│ ├── css
+│ │ └── style.css
+│ ├── img
+│ │    ├── akagi.jpg
+│ │    ├── akagi chibi.png
+│ │    ├── akagi stats.png
+│ │    ├── mitsui.jpg
+│ │    ├── mitsui chibi.png
+│ │    ├── mitsui stats.png
+│ │    ├── rukawa.jpg
+│ │    ├── rukawa chibi.png
+│ │    ├── rukawa stats.png
+│ │    ├── ryota.jpg
+│ │    ├── ryota chibi.png
+│ │    ├── ryota stats.png
+│ │    ├── sakuragi.jpg
+│ │    ├── sakuragi chibi.png
+│ │    ├── sakuragi stats.png
+│ │    ├── shohokugym.jpg
+│ │    ├── slamdunk.jpg
+│ │    └── slamdunk-bg.jpg
+│ └── js
+│ 
 
+├── pages
+│ ├── akagi
+│ │    └── akagi.html
+│ ├── mitsui
+│ │    └── mitsui.html
+│ ├── rukawa
+│ │    └── rukawa.html
+│ ├── ryota
+│ │    └── ryota.html
+│ └── sakuragi
+│      └── sakuragi.html
+
+├── index.html
+├── LICENSE
+├── README.md
+└── structure.txt
