@@ -30,7 +30,7 @@ This project is part of a Web Design seatwork focused on building a responsive a
 
 ---
 
-## 🗂️ File Structure
+## 🗂️ File Structure 
 ```
 WD-SEATWORK-2
 ├── assets
@@ -74,3 +74,6 @@ WD-SEATWORK-2
 ├── LICENSE
 ├── README.md
 └── structure.txt
+
+
+
