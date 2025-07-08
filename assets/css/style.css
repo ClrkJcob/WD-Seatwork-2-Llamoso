@@ -143,3 +143,41 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+<head>
+  ...
+  <style>
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      animation: slideInLeft 0.7s ease forwards;
+      opacity: 0;
+    }
+
+    .back-link:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ff5252;
+      box-shadow: 0 0 12px rgba(255, 82, 82, 0.5);
+      transform: scale(1.05);
+    }
+
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
