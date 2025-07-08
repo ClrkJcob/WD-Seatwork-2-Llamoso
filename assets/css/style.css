@@ -2,12 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/https://clrkjcob.github.io/WD-Seatwork-2/assets/img/shohokugym.jpg')
+  background-image: url('https://clrkjcob.github.io/WD-Seatwork-2/assets/img/shohokugym.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
   animation: fadeInBody 1s ease-in;
 }
+
+
 
 @keyframes fadeInBody {
   from { opacity: 0; }
@@ -84,7 +87,7 @@ header {
 
 .side-menu a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.6rem;
   font-weight: bold;
   display: block;
