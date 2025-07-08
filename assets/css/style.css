@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('https://clrkjcob.github.io/WD-Seatwork-2/assets/img/shohokugym.jpg');
+  background-image: url('../img/shohokugym.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
