@@ -2,28 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanamichi Sakuragi</title>
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Centered layout for the hero content */
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-text img:first-of-type {
+      width: 200px; /* smaller first image */
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text img:last-of-type {
+      width: 400px; /* larger second image */
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 2rem;
+    }
+
+    /* Top-left corner Back to Home link */
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    header {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Hanamichi Sakuragi</h1>
-    <a href="../index.html">← Back to Home</a>
-  </header>
+  <div class="overlay">
 
-  <main>
-    <section class="character-page">
-      <img src="../assets/img/hanamichi.jpeg" alt="Hanamichi Sakuragi" class="character-img" />
-      <p>
-        Hanamichi Sakuragi is the loud, fiery redhead and power forward of Shohoku High. Initially joining the team to impress a girl,
-        he unexpectedly finds himself falling in love with basketball. His growth from a complete beginner to a powerful rebounder
-        showcases his determination and natural talent.
-      </p>
-    </section>
-  </main>
+    <!-- Back to Home pinned to far top-left -->
+    <a href="../../index.html" class="back-link">← Back to Home</a>
 
-  <footer>
-    <p>&copy; 2025 Llamoso</p>
-  </footer>
+    <header>
+      <h1>Hanamichi Sakuragi</h1>
+    </header>
+
+    <main class="hero">
+      <div class="hero-text">
+        <img 
+          src="../../assets/img/sakuragi.jpg" 
+          alt="Sakuragi Full"
+        >
+
+        <img 
+          src="../../assets/img/sakuragi stats.png" 
+          alt="Sakuragi Stats"
+        >
+
+        <h2>The Rebound King</h2>
+        <p>
+            Hanamichi Sakuragi is the brash, loud, and unforgettable red-haired rookie of Shohoku High. Known initially as a delinquent and hopeless romantic who got into fights more often than class, Sakuragi had zero interest in basketball—until he fell head over heels for Haruko Akagi. What started as an attempt to impress a girl turned into a journey of transformation. Though inexperienced and impulsive, Sakuragi possesses extraordinary natural athleticism, incredible jumping power, and relentless energy on the court. His unmatched tenacity for grabbing rebounds earned him the nickname “Rebound King,” and his rapid improvement surprised everyone, including himself. Behind his comical arrogance and hot-headedness lies a heart that genuinely cares about his team, his pride, and eventually, the game itself. From a laughingstock to a rising star, Sakuragi’s journey captures the spirit of perseverance and growth that defines Shohoku’s underdog story.
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Llamoso</p>
+    </footer>
+
+  </div>
 </body>
 </html>

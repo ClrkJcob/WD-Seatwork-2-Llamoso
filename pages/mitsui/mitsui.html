@@ -2,26 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hisashi Mitsui</title>
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    body { margin: 0; padding: 0; }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-text img:first-of-type {
+      width: 200px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text img:last-of-type {
+      width: 400px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    header { text-align: center; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Hisashi Mitsui</h1>
-    <a href="../index.html">← Back to Home</a>
-  </header>
+  <div class="overlay">
+    <a href="../../index.html" class="back-link">← Back to Home</a>
 
-  <main>
-    <section class="character-page">
-      <img src="../assets/img/mitsui.jpeg" alt="Hisashi Mitsui" class="character-img" />
-      <p>
-        Former MVP turned delinquent, Mitsui's return to the team is emotional and powerful. As a shooting guard, his clutch three-pointers and redemption arc make him a fan favorite.
-      </p>
-    </section>
-  </main>
+    <header>
+      <h1>Hisashi Mitsui</h1>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 Llamoso</p>
-  </footer>
+    <main class="hero">
+      <div class="hero-text">
+        <img src="../../assets/img/mitsui.jpg" alt="Hisashi Mitsui">
+        <img src="../../assets/img/mitsui stats.png" alt="Mitsui Stats">
+
+        <h2>The Sharpshooter</h2>
+        <p>
+            Hisashi Mitsui is Shohoku's deadly long-range shooter and one of its most complex characters. A former junior high MVP, Mitsui’s early career was derailed by injury and inner turmoil, leading him down a rebellious path. After a heartfelt return to basketball, he rediscovers his love for the game and redeems himself as a key player. With a cool head and clutch shooting, especially from three-point range, Mitsui is both a technical asset and a symbol of redemption. His return to the court inspires his team and reminds everyone of the passion that fuels champions.
+
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Llamoso</p>
+    </footer>
+  </div>
 </body>
 </html>

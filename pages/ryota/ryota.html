@@ -2,26 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ryota Miyagi</title>
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-text img:first-of-type {
+      width: 200px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text img:last-of-type {
+      width: 400px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    header {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Ryota Miyagi</h1>
-    <a href="../index.html">← Back to Home</a>
-  </header>
+  <div class="overlay">
+    <a href="../../index.html" class="back-link">← Back to Home</a>
 
-  <main>
-    <section class="character-page">
-      <img src="../assets/img/miyagi.jpeg" alt="Ryota Miyagi" class="character-img" />
-      <p>
-        The quick and clever point guard of Shohoku, Miyagi is known for his flashy moves and excellent court vision. His speed and leadership are vital to the team's success.
-      </p>
-    </section>
-  </main>
+    <header>
+      <h1>Ryota Miyagi</h1>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 Llamoso</p>
-  </footer>
+    <main class="hero">
+      <div class="hero-text">
+        <img src="../../assets/img/ryota.jpg" alt="Ryota Miyagi">
+        <img src="../../assets/img/ryota stats.png" alt="Ryota Stats">
+
+        <h2>The Quick Playmaker</h2>
+        <p>
+Ryota Miyagi, the heart and soul of Shohoku’s offense, is known for his incredible speed, sharp reflexes, and court awareness. Despite being the shortest player on the team, he makes up for it with lightning-fast drives, tight ball-handling, and smart playmaking. Off the court, Ryota carries emotional scars from the loss of his older brother, which fuels his determination and resilience. His loyalty to his teammates and quiet leadership make him the steady anchor of the team’s fast-paced attack.        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Llamoso</p>
+    </footer>
+  </div>
 </body>
 </html>

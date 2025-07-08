@@ -25,8 +25,8 @@ This project is part of a Web Design seatwork focused on building a responsive a
 
 ## 🛠️ Technology
 
-- HTML5  
-- CSS3
+- HTML
+- CSS
 
 ---
 

@@ -2,26 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kaede Rukawa</title>
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    body { margin: 0; padding: 0; }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-text img:first-of-type {
+      width: 200px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text img:last-of-type {
+      width: 400px;
+      border-radius: 12px;
+      border: 3px solid white;
+      margin-bottom: 2rem;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    header { text-align: center; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Kaede Rukawa</h1>
-    <a href="../index.html">← Back to Home</a>
-  </header>
+  <div class="overlay">
+    <a href="../../index.html" class="back-link">← Back to Home</a>
 
-  <main>
-    <section class="character-page">
-      <img src="../assets/img/ruwota.jpeg" alt="Kaede Rukawa" class="character-img" />
-      <p>
-        Calm, cool, and incredibly talented, Rukawa is Shohoku’s ace and small forward. Though quiet and reserved, his intense drive to be the best makes him one of the most feared scorers in the league.
-      </p>
-    </section>
-  </main>
+    <header>
+      <h1>Kaede Rukawa</h1>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 Llamoso</p>
-  </footer>
+    <main class="hero">
+      <div class="hero-text">
+        <img src="../../assets/img/rukawa.jpg" alt="Kaede Rukawa">
+        <img src="../../assets/img/rukawa stats.png" alt="Rukawa Stats">
+
+        <h2>The Cold-Blooded Ace</h2>
+        <p>
+  Kaede Rukawa is Shohoku’s stoic and prodigious scoring machine. With raw talent, unmatched athleticism, and an icy demeanor, he often dominates opponents with effortless drives and smooth jumpers. Rukawa is fiercely competitive and has one goal: to become the best basketball player in Japan. Though he rarely speaks and keeps others at a distance, his quiet intensity and work ethic speak volumes. His rivalry with other top players — and his dynamic tension with Sakuragi pushes him to evolve into not just a scorer, but a complete player. Underneath his cold exterior lies a relentless hunger for greatness.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Llamoso</p>
+    </footer>
+  </div>
 </body>
 </html>

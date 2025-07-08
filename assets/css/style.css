@@ -1,25 +1,44 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d0d0d;
-  color: #ffffff;
+  background-image: url('/assets/img/shohokugym.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2rem;
+  text-align: center;
 }
 
 header {
-  background-color: #b71c1c;
   padding: 1rem;
-  text-align: center;
   color: white;
 }
 
 .side-menu ul {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin: 0;
+  width: 100%
+}
+
+.character-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .side-menu li {
@@ -27,47 +46,49 @@ header {
 }
 
 .side-menu img {
-  width: 90px;
-  height: 90px;
-  border-radius: 10px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  border: 2px solid white;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0);
   transition: transform 0.3s ease;
 }
 
 .side-menu img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .hero {
-  background: url('../assets/img/slamdunk-bg.jpg') no-repeat center center/cover;
-  padding: 3rem 2rem;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
-}
-
-.hero-text {
+  margin-top: 2rem;
   max-width: 800px;
-  margin: auto;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
   color: #ff5252;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 2rem;
+  line-height: 1.6;
   color: #eeeeee;
 }
 
 footer {
-  background-color: #1c1c1c;
+  background-color: #1c1c1c00;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #cccccc;
+  margin-top: 2rem;
+  width: 100%;
 }
